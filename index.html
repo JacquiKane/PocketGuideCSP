@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AP CSP Pocket Guide #1</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <style>
@@ -34,10 +33,9 @@
             font-feature-settings: 'liga';
             color: green;
         }
-
+        
         @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
         @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
-
         .cardbody {
             font-family: 'Indie Flower', cursive !important;
             background: #FDE3A7;
@@ -45,33 +43,32 @@
             margin: 0px;
             padding: 0px;
         }
-
-        ::selection {
+        
+         ::selection {
             background: transparent;
         }
-
+        
         .infocell {
             background-color: powderblue;
         }
-
+        
         h4 {
             font-size: 26px;
             line-height: 1px;
             font-family: 'Amatic SC', cursive !important;
             padding-top: 5px;
         }
-
+        
         .color1 {
             color: #1BBC9B
         }
-
         /*MOUNTAIN MEADOW*/
-
+        
         .color2 {
             color: #C0392B
-                /*TALL POPPY*/
+            /*TALL POPPY*/
         }
-
+        
         .cardgreeting {
             color: #013243;
             /*SHERPA BLUE*/
@@ -86,12 +83,12 @@
             box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5), 20px 0 60px rgba(0, 0, 0, .5);
             transition: 1s;
         }
-
+        
         .cardgreeting:hover {
             transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(1.2);
             box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 10px 100px rgba(0, 0, 0, .5);
         }
-
+        
         .cardgreeting:before {
             content: '';
             position: absolute;
@@ -103,7 +100,7 @@
             transform-origin: bottom;
             transform: skewX(-45deg);
         }
-
+        
         .cardgreeting:after {
             content: '';
             position: absolute;
@@ -115,7 +112,7 @@
             transform-origin: left;
             transform: skewY(-45deg);
         }
-
+        
         .cardgreeting .imgBox {
             width: 100%;
             height: 100%;
@@ -123,7 +120,7 @@
             transform-origin: left;
             transition: .7s;
         }
-
+        
         .cardgreeting .bark {
             position: absolute;
             background: #e0e1dc;
@@ -132,22 +129,22 @@
             opacity: 0;
             transition: .7s;
         }
-
+        
         .cardgreeting .imgBox img {
             min-width: 250px;
             max-height: 400px;
         }
-
+        
         .cardgreeting:hover .imgBox {
             transform: rotateY(-135deg);
         }
-
+        
         .cardgreeting:hover .bark {
             opacity: 1;
             transition: .6s;
             box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
         }
-
+        
         .cardgreeting .details {
             position: absolute;
             top: 0;
@@ -157,64 +154,64 @@
             z-index: -1;
             margin-top: 70px;
         }
-
+        
         .cardgreeting .details p {
             font-size: 15px;
             line-height: 5px;
             transform: rotate(-10deg);
             padding: 0 0 0 20px;
         }
-
+        
         .cardgreeting .details h4 {
             text-align: center;
         }
-
+        
         .text-right {
             text-align: right;
         }
-
+        
         .floatleft {
             float: left;
             background-color: lightcyan;
             width: 25%;
             height: 100%;
         }
-
+        
         .justfloatleft {
             float: left;
             background-color: lightcyan;
             width: 100%;
             height: 100%;
         }
-
+        
         .floatright {
             float: right;
             background-color: lightcyan;
             width: 25%;
             height: 100%;
         }
-
+        
         .floatcenter {
             float: left;
             background-color: lightcyan;
             width: 50%;
             height: 20%;
         }
-
+        
         .unitcard {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             transition: 0.3s;
             width: 95%;
         }
-
+        
         .card:hover {
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         }
-
+        
         .container {
             padding: 2px 16px;
         }
-
+        
         .pocketguidetypes {
             font-family: 'Amatic SC', cursive !important;
             font-weight: bold;
@@ -223,57 +220,65 @@
             color: rgb(0, 0, 255);
             background: lightcyan;
         }
-
+        
         .quote {
             color: rgb(0, 0, 255);
             font-style: italic;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
-
+        
+        td {
+            position: relative;
+            padding-right: 2px;
+            vertical-align: top;
+        }
         /* Important part */
-
+        
         .modal-dialog {
             overflow-y: initial !important
         }
-
+        
         .modal-body {
             height: 80vh;
             overflow-y: auto;
         }
-
+        
         .visibilitymatters {
             width: 75px;
             height: auto;
         }
-
+        
         .visibilityreallymatters {
             width: 500px;
             height: auto;
         }
-
+        
         .imageannotate {
             width: 300px;
             height: auto;
         }
-
+        
         .imageannotateplus {
             width: 400px;
             height: auto;
         }
-
+        
         .headercsp {
             background: rgb(54, 65, 65);
         }
-
+        
         .carousel-item.active,
         .carousel-item-next,
         .carousel-item-prev {
             display: block;
         }
-
+        
         .carouselback {
             background-color: teal;
         }
-
+        
         .carouseldef {
             width: 100%;
             padding-left: 0%;
@@ -281,15 +286,15 @@
             justify-content: center;
             color: seashell;
         }
-
+        
         .carouselh3 {
             color: seashell;
         }
-
+        
         .spacer {
             margin-top: 200px;
         }
-
+        
         .popovertable td {
             border: 1px dashed blue;
         }
@@ -361,8 +366,8 @@
                             <div class="carousel-item active text-center p-4">
                                 <h3 class="carouselh3">bit</h3>
                                 <h6>measure, digital information</h6>
-                                <p class="carouseldef">least measurement unit, pulse, represented as 1 or
-                                    0</p>
+                                <p class="carouseldef">least measurement unit, pulse, represented as 1 or 0
+                                </p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
@@ -400,8 +405,8 @@
 
                                 <h3 class="carouselh3">overflow</h3>
                                 <h6>inaccurate representation</h6>
-                                    <P class="carouseldef">too few bits to represent number
-                                    </p>
+                                <P class="carouseldef">too few bits to represent number
+                                </p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
@@ -417,8 +422,8 @@
 
                                 <h3 class="carouselh3">pixel</h3>
                                 <h6>picture element</h6>
-                                    <P class="carouseldef">
-                                        represents a dot in an image</p>
+                                <P class="carouseldef">
+                                    represents a dot in an image</p>
                             </div>
 
 
@@ -434,54 +439,54 @@
 
                                 <h3 class="carouselh3">compression</h3>
                                 <h6>reduction scheme</h6>
-                                    <P class="carouseldef">reduces size of data files</p>
+                                <P class="carouseldef">reduces size of data files</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">lossy compression</h3>
                                 <h6>compression scheme </h6>
-                                    <P class="carouseldef">results in loss of original data</p>
+                                <P class="carouseldef">results in loss of original data</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">lossless compression</h3>
                                 <h6>compression scheme</h6>
-                                    <P class="carouseldef">allows restoration to original, no loss of data</p>
+                                <P class="carouseldef">allows restoration to original, no loss of data</p>
                             </div>
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">copyright license</h3>
                                 <h6>trade license</h6>
-                                    <P class="carouseldef">legal protection against use of work by others
-                                        </p>
+                                <P class="carouseldef">legal protection against use of work by others
+                                </p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">creative commons license</h3>
                                 <h6>trade license</h6>
-                                    <P class="carouseldef">allows owner to grant permissions for use of work </p>
+                                <P class="carouseldef">allows owner to grant permissions for use of work </p>
                             </div>
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">network</h3>
                                 <h6>linked computers</h6>
-                                    <P class="carouseldef">group of computers with ability to communicate</p>
+                                <P class="carouseldef">group of computers with ability to communicate</p>
                             </div>
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">internet</h3>
                                 <h6>global network</h6>
-                                    <P class="carouseldef">consists of multiple smaller networks</p>
+                                <P class="carouseldef">consists of multiple smaller networks</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">mesh network</h3>
                                 <h6>distributed network</h6>
-                                    <P class="carouseldef">computers linked without central control</p>
+                                <P class="carouseldef">computers linked without central control</p>
                             </div>
 
 
@@ -490,48 +495,48 @@
 
                                 <h3 class="carouselh3">protocol</h3>
                                 <h6>agreement</h6>
-                                    <P class="carouseldef">set of guidelines, agreed to</p>
+                                <P class="carouseldef">set of guidelines, agreed to</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">Internet Protocol (IP)</h3>
                                 <h6>rules, internet functionality</h6>
-                                    <P class="carouseldef">state how information is sent over the internet</p>
+                                <P class="carouseldef">state how information is sent over the internet</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">IP Address</h3>
                                 <h6>unique address</h6>
-                                    <P class="carouseldef"> identifies each device attached to the internet</p>
+                                <P class="carouseldef"> identifies each device attached to the internet</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">IPV4</h3>
                                 <h6>IP address</h6>
-                                    <P class="carouseldef">32 bit address, allows for about 4 billion addresses</p>
+                                <P class="carouseldef">32 bit address, allows for about 4 billion addresses</p>
                             </div>
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">IPV6, IPng</h3>
                                 <h6>IP address, next gen</h6>
-                                    <P class="carouseldef">128 bit address, allows for 340 undecillion addresses</p>
+                                <P class="carouseldef">128 bit address, allows for 340 undecillion addresses</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">Domain Name System (DNS)</h3>
                                 <h6>mapping system</h6>
-                                    <P class="carouseldef">maps domain name (like www.abc.com) to IP address</p>
-                            </div>  
-                            
+                                <P class="carouseldef">maps domain name (like www.abc.com) to IP address</p>
+                            </div>
+
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">TCP/IP</h3>
                                 <h6>rules, reliable data transmission</h6>
-                                    <P class="carouseldef">Transmission Control Protocol/Internet Protocol</p>
+                                <P class="carouseldef">Transmission Control Protocol/Internet Protocol</p>
                             </div>
 
 
@@ -539,61 +544,59 @@
 
                                 <h3 class="carouselh3">packet</h3>
                                 <h6>unit of information</h6>
-                                    <P class="carouseldef">sent over the internet</p>
+                                <P class="carouseldef">sent over the internet</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">packet switching network</h3>
                                 <h6>network</h6>
-                                    <P class="carouseldef">packets may be sent on different routes to destination</p>
+                                <P class="carouseldef">packets may be sent on different routes to destination</p>
                             </div>
 
-                     
+
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">router</h3>
                                 <h6>network device</h6>
-                                    <P class="carouseldef">
-            joins networks and directs network traffic</p>
+                                <P class="carouseldef">
+                                    joins networks and directs network traffic</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">bandwidth</h3>
                                 <h6>measure of data transmitted</h6>
-                                    <P class="carouseldef">
-                                        data sent on internet connection per unit of time</p>
+                                <P class="carouseldef">
+                                    data sent on internet connection per unit of time</p>
                             </div>
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">latency</h3>
                                 <h6>measure of delay, lag</h6>
-                                    <P class="carouseldef">
-                                       time to get a response from an internet node</p>
+                                <P class="carouseldef">
+                                    time to get a response from an internet node</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">redundancy, internet</h3>
                                 <h6>measure of reliability</h6>
-                                    <P class="carouseldef">multiple possible paths through network,
-                                         source to destination</p>
+                                <P class="carouseldef">multiple possible paths through network, source to destination</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">reliability, internet</h3>
                                 <h6>aspiration, internet functionality</h6>
-                                    <P class="carouseldef">multiple redundant pathways,  
-                                        protocols re-sending lost data</p>
+                                <P class="carouseldef">multiple redundant pathways, protocols re-sending lost data</p>
                             </div>
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">scalability, internet</h3>
                                 <h6>functionality, internet</h6>
-                                    <P class="carouseldef">ability of internet to grow or shrink, still function</p>
+                                <P class="carouseldef">ability of internet to grow or shrink, still function</p>
                             </div>
 
 
@@ -601,68 +604,68 @@
 
                                 <h3 class="carouselh3">HyperText Transfer Protocol (HTTP)</h3>
                                 <h6>transmission protocol</h6>
-                                    <P class="carouseldef">supports transmittion of documents on internet</p>
+                                <P class="carouseldef">supports transmittion of documents on internet</p>
                             </div>
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">HyperText Markup Language</h3>
                                 <h6>formatting or markup language</h6>
-                                    <P class="carouseldef">
-                                        formats documents for rendering in a browser</p>
+                                <P class="carouseldef">
+                                    formats documents for rendering in a browser</p>
                             </div>
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">app</h3>
                                 <h6>program, application</h6>
-                                    <P class="carouseldef">
-                                        sequence of lines of code</p>
+                                <P class="carouseldef">
+                                    sequence of lines of code</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">end user</h3>
                                 <h6>app usage</h6>
-                                    <P class="carouseldef">
-                                        individual user of the app</p>
+                                <P class="carouseldef">
+                                    individual user of the app</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">target audience</h3>
                                 <h6>intended users</h6>
-                                    <P class="carouseldef">
-                                        planned users of the app</p>
+                                <P class="carouseldef">
+                                    planned users of the app</p>
                             </div>
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">input</h3>
                                 <h6>data</h6>
-                                    <P class="carouseldef">
-                                        data added to a system</p>
+                                <P class="carouseldef">
+                                    data added to a system</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">output</h3>
                                 <h6>data</h6>
-                                    <P class="carouseldef">
-                                        data shown by system</p>
+                                <P class="carouseldef">
+                                    data shown by system</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">output</h3>
                                 <h6>data</h6>
-                                    <P class="carouseldef">
-                                        data shown by system</p>
+                                <P class="carouseldef">
+                                    data shown by system</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">event</h3>
                                 <h6>control</h6>
-                                    <P class="carouseldef">
-                                        occurrence like a mouse click</p>
+                                <P class="carouseldef">
+                                    occurrence like a mouse click</p>
                             </div>
 
 
@@ -670,156 +673,156 @@
 
                                 <h3 class="carouselh3">event driven programming</h3>
                                 <h6>software</h6>
-                                    <P class="carouseldef">
-                                        apps driven by programming events</p>
+                                <P class="carouseldef">
+                                    apps driven by programming events</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">user interface(UI)</h3>
                                 <h6>visual, screen</h6>
-                                    <P class="carouseldef">
-                                        part of program the user can see and use</p>
+                                <P class="carouseldef">
+                                    part of program the user can see and use</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">UI elements</h3>
                                 <h6>data</h6>
-                                    <P class="carouseldef">
-                                        controls supported by modern UIs</p>
+                                <P class="carouseldef">
+                                    controls supported by modern UIs</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">radio buttons</h3>
                                 <h6>UI element</h6>
-                                    <P class="carouseldef">
-                                        group of buttons allowing 1 selection only</p>
+                                <P class="carouseldef">
+                                    group of buttons allowing 1 selection only</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">check boxes</h3>
                                 <h6>UI element</h6>
-                                    <P class="carouseldef">
-                                        one or more buttons allowing selection</p>
+                                <P class="carouseldef">
+                                    one or more buttons allowing selection</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">label</h3>
                                 <h6>UI element</h6>
-                                    <P class="carouseldef">
-                                        text display element</p>
+                                <P class="carouseldef">
+                                    text display element</p>
                             </div>
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">text input</h3>
                                 <h6>data</h6>
-                                    <P class="carouseldef">
-                                        text entry element</p>
+                                <P class="carouseldef">
+                                    text entry element</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">button</h3>
                                 <h6>UI element</h6>
-                                    <P class="carouseldef">
-                                        clickable element</p>
+                                <P class="carouseldef">
+                                    clickable element</p>
                             </div>
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">image</h3>
                                 <h6>UI element</h6>
-                                    <P class="carouseldef">
-                                        visual elelent, renders image file</p>
+                                <P class="carouseldef">
+                                    visual elelent, renders image file</p>
                             </div>
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">dropdown</h3>
                                 <h6>UI element</h6>
-                                    <P class="carouseldef">
-                                        field showing multiple choices when clicked</p>
+                                <P class="carouseldef">
+                                    field showing multiple choices when clicked</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">property</h3>
                                 <h6>UI element</h6>
-                                    <P class="carouseldef">
-                                        attribute of the element, like colour</p>
+                                <P class="carouseldef">
+                                    attribute of the element, like colour</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">variable</h3>
                                 <h6>program code</h6>
-                                    <P class="carouseldef">
-                                        named location in computer memory</p>
+                                <P class="carouseldef">
+                                    named location in computer memory</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">syntax</h3>
                                 <h6>programming language</h6>
-                                    <P class="carouseldef">
-                                        rules for coding in the programming language</p>
+                                <P class="carouseldef">
+                                    rules for coding in the programming language</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">syntax error</h3>
                                 <h6>programming language</h6>
-                                    <P class="carouseldef">
-                                        invalid syntax</p>
+                                <P class="carouseldef">
+                                    invalid syntax</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">semantics</h3>
                                 <h6>programming</h6>
-                                    <P class="carouseldef">
-                                        logic or intent behind code</p>
+                                <P class="carouseldef">
+                                    logic or intent behind code</p>
                             </div>
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">semantic error</h3>
                                 <h6>programming language</h6>
-                                    <P class="carouseldef">
-                                        logic flaw in code</p>
+                                <P class="carouseldef">
+                                    logic flaw in code</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">bug</h3>
                                 <h6>programming</h6>
-                                    <P class="carouseldef">
-                                        error in logic of code, semantic error</p>
+                                <P class="carouseldef">
+                                    error in logic of code, semantic error</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">debugging</h3>
                                 <h6>programming</h6>
-                                    <P class="carouseldef">
-                                        finding and fixing bug, semantic error</p>
+                                <P class="carouseldef">
+                                    finding and fixing bug, semantic error</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">conditional</h3>
                                 <h6>programming</h6>
-                                    <P class="carouseldef">
-                                        if, evaluates expression and make decision</p>
+                                <P class="carouseldef">
+                                    if, evaluates expression and make decision</p>
                             </div>
 
                             <div class="carousel-item text-center p-4">
 
                                 <h3 class="carouselh3">function</h3>
                                 <h6>programming</h6>
-                                    <P class="carouseldef">
-                                        block of code, given a name to invoke with</p>
+                                <P class="carouseldef">
+                                    block of code, given a name to invoke with</p>
                             </div>
                         </div>
 
@@ -933,8 +936,7 @@
 
 
         <!-- Modal 1 -->
-        <div class="modal fade" id="dataoncomputer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="dataoncomputer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -945,52 +947,50 @@
 
                         <table>
                             <tr>
-                                <td><span class="quote">There are 10 types
-                                        of people in the world, those who know binary and those who don't!</span><br>
+                                <td>
+                                    <span class="quote">There are 10 types
+                                        of people in the world, those who know binary and those who don't!</span>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+                                    <p>
+                                        Binary is a number system, that's it! The number base that binary uses is base 2. The only digits that binary has are 1 and 0.
+                                    </p>
+                                    <p>Binary is important for digital representation. A binary 1 represents a pulse and a binary 0 represents no pulse (of electricity of course). Computers record data with pulses of electricity, and these map perfectly
+                                        to a 1 or a 0.</p>
+                                    </p><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><br>
                                     <i class="material-icons custom">stars</i> What is binary?<br>
                                     <i class="material-icons custom">stars</i> Why is binary important on computers?<br>
-                                    <i class="material-icons custom">stars</i> How can I convert a decimal number to
-                                    binary?
+                                    <i class="material-icons custom">stars</i> How can I convert a decimal number to binary?
                                     <br>
                                     <i class="material-icons custom">stars</i> What's hexadecimal?<br>
-                                    <i class="material-icons custom">stars</i> Can hexadecimal be converted to decimal?
-                                    binary?
+                                    <i class="material-icons custom">stars</i> Can hexadecimal be converted to decimal? binary?
                                     <br>
                                     <i class="material-icons custom">stars</i> Why use hexadeciaml or decimal?<br>
                                     <i class="material-icons custom">stars</i> How many bits does a number need?<br>
                                     <i class="material-icons custom">stars</i> What is overflow?<br>
                                 </td>
-                                <td><i class="material-icons custom">question_answer</i>
-                                    <p>
-                                        Binary is a number system, that's it! The number base that binary uses is base
-                                        2. The only digits that binary has are 1 and 0.
-                                    </p>
-                                    <p>The reason binary is important for computing relates to digital representation. A
-                                        binary 1 represents a pulse and a binary 0 represents no pulse (of electricity
-                                        of course). The only way a computer can record information
-                                        is with pulses of electricity, and these map perfectly to a 1 or a 0.</p>
-                                    </p><br>
+                                <td>
 
 
-                                    <p>To convert a binary number to the equivalent decimal number, you use the base,
-                                        which is 2, and multiply each digit by the base raised to the power of the
-                                        digit's place position. Hover to see an example
-                                        <button type="button" class="btn btn-info" id="binnumbutton"
-                                            data-toggle="popover" title="Binary to decimal" data-trigger="hover"
-                                            html="true">here</button>.</p>
+                                    <p>To convert a binary number to the equivalent decimal number, you use the base, which is 2, and multiply each digit by the base raised to the power of the digit's place position. Hover to see an example
+                                        <button type="button" class="btn btn-info" id="binnumbutton" data-toggle="popover" title="Binary to decimal" data-trigger="hover" html="true">here</button>.</p>
 
                                     <div id="binnum" style="display: none">
                                         <div>
                                             <p>A binary number is represented as a string of 1s and 0s, like this</p>
                                             <p>1010</p>
-                                            <p>A subscript of 2 indicates that this number is a binary number, and not
-                                                one thousand and 10.</p>
+                                            <p>A subscript of 2 indicates that this number is a binary number, and not one thousand and 10.</p>
                                             <p>1001<sub>2</sub></p>
                                             <p>This number can be shown in expanded form as,</p>
                                             <p>(1 x 2
                                                 <sup>3</sup>) + (0 x 2
-                                                <sup>2</sup>) + (1 x 2
-                                                <sup>0</sup>
+                                                <sup>2</sup>) + (0 x 2
+                                                <sup>1</sup>) + (1 x 2<sup>0</sup>)
                                             </p>
                                             <p>(8) + (0) + (0) + (1) = 9</p>
                                         </div>
@@ -999,40 +999,28 @@
 
 
 
-                                    <p>Octal is a term that represents base 8, and hexadecimal represents base 16. '0x'
-                                        is a prefix for a hexdecimal number, like 0x1B7A. It takes 4 bits to represent a
-                                        hexadacimal number in binary.</p>
+                                    <p>Octal is a term that represents base 8, and hexadecimal represents base 16. '0x' is a prefix for a hexadecimal number, like 0x1B7A. It takes 4 bits to represent a hexadecimal number in binary.</p>
                                     <p>Want to review the hexadecimal chart? Hover
-                                        <button type="button" class="btn btn-info" id="hexchartbutton"
-                                            data-toggle="popover" data-placement="right" title="Hexadecimal chart"
-                                            data-trigger="hover" html="true">here</button></p>
+                                        <button type="button" class="btn btn-info" id="hexchartbutton" data-toggle="popover" data-placement="right" title="Hexadecimal chart" data-trigger="hover" html="true">here</button></p>
                                     </p>
-                                    <p>0x2D5C? 2 is 0010, D is 1101, 5 is 0101, C is 1100, so 0x2D5C is
-                                        0010110101011100.
+                                    <p>0x2D5C? 2 is 0010, D is 1101, 5 is 0101, C is 1100, so 0x2D5C is 0010110101011100.
                                     </p>
-                                    <p>You can convert 0x2D5C to decimal by using the binary translation and mulyiplying
-                                        by powers of 2, or you can multiply the digits by powers of 16.</p>
+                                    <p>You can convert 0x2D5C to decimal by using the binary translation and mulyiplying by powers of 2, or you can multiply the digits by powers of 16.</p>
                                     <p>0x2D5C : (2 x 16
                                         <sup>3</sup>) + (D x 16
                                         <sup>2</sup>) + (5 x 16
                                         <sup>1</sup>) + (C x 16
                                         <sup>0</sup>)</p>
 
-                                    <p>The computer only understands pulses of electricity, represented to us as the 1s
-                                        and 0s in a binary stream. The equivalent decimal, octal and hexadecimal
-                                        representations take up a lot less space and are easier to compare
+                                    <p>The computer only understands pulses of electricity, represented to us as the 1s and 0s in a binary stream. The equivalent decimal, octal and hexadecimal representations take up a lot less space and are easier to compare
                                         on a chart. This is why you need to know how to convert between the bases.</p>
 
-                                    <p>A bit is the smallest unit of storage on a computer, and can represent a 1 or a
-                                        0. Any one hexadecimal digit requires 4 bits. Suppose we only allow for 4 bits
-                                        of storage and want to represent the number 20? In binary,
-                                        20 is 10100<sub>2</sub>. This needs 5 bits, so if we only had 4 bits there would
-                                        be overflow and we would only see 0100.</p>
+                                    <p>A bit is the smallest unit of storage on a computer, and can represent a 1 or a 0. Any one hexadecimal digit requires 4 bits. Suppose we only allow for 4 bits of storage and want to represent the number 20? In binary,
+                                        20 is 10100<sub>2</sub>. This needs 5 bits, so if we only had 4 bits there would be overflow and we would only see 0100.</p>
                                     <!--  content of popover  -->
                                     <div id="hexchart" style="display: none">
                                         <div>
-                                            <p>The hexadecimal number system has 16 digits, shown below with the binary
-                                                representation.
+                                            <p>The hexadecimal number system has 16 digits, shown below with the binary representation.
                                             </p>
                                             <table>
                                                 <tr>
@@ -1142,8 +1130,7 @@
 
 
         <!-- Modal 2 DATA REP -->
-        <div class="modal fade" id="datarep" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="datarep" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1156,11 +1143,21 @@
                             <tr>
                                 <td><span class="quote">The goal is to turn data into information and information into
                                         insight – Carly Fiorina</span><br>
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i><br>
+                                    <p> Characters in text are mapped to a binary represenation so that they can be digitized and stored and recognized by a computer. The ASCII (American Standard Code for Information Interchange) chart is how this is done!</p>
+                                    <p>
+
+                                        <button type="button" class="btn btn-info" id="asciichartbutton" data-toggle="popover" title="Charts Translate" data-trigger="hover" html="true"><img class="visibilitymatters" src="ascii.png"> </button> The letter
+                                        'A' is decimal 65, 10000001<sub>2</sub> . </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
                                     <i class="material-icons custom">stars</i> How is text represented in a computer?
                                     <br>
                                     <i class="material-icons custom">stars</i> What is the ASCII table?<br>
-                                    <i class="material-icons custom">stars</i> How can I convert text to binary
-                                    representation?
+                                    <i class="material-icons custom">stars</i> How can I convert text to binary representation?
                                     <br>
                                     <i class="material-icons custom">stars</i> How are images represented on a computer?
                                     <br>
@@ -1169,49 +1166,27 @@
                                     <i class="material-icons custom">stars</i> How many bits does a number need?<br>
                                     <i class="material-icons custom">stars</i> What is overflow?<br>
                                 </td>
-                                <td><i class="material-icons custom">question_answer</i>
-                                    <p>
-                                        Characters in text are mapped to a binary represenation so that they can be
-                                        digitized and stored and recognized by a computer. The ASCII (American Standard
-                                        Code for Information Interchange) chart is how this is done!
-                                        <button type="button" class="btn btn-info" id="asciichartbutton"
-                                            data-toggle="popover" title="Binary to decimal" data-trigger="hover"
-                                            html="true"><img class="visibilitymatters" src="ascii.png"> </button> The
-                                        letter
-                                        'A' is decimal 65, 10000001<sub>2</sub> . </p>
+                                <td>
+
                                     <p>Images are encoded using
                                         <ol>
                                             <li>meta-data, which is data about data - like for width and height</li>
                                             <li>pixels, encoded as bits</li>
                                         </ol>
                                     </p>
-                                    <p>In a black and white image, 1 might represent white, 0 might represent black, as
-                                        in the image below.</p>
+                                    <p>In a black and white image, 1 might represent white, 0 might represent black, as in the image below.</p>
                                     <p><img src="pixelsbw.png" class="imageannotate"></p>
                                     </p><br>
-                                    <p>Color images take more bits, but are represented digitally using a color model.
-                                        There are several color models that are used to represent colors digitally. The
-                                        RGB (Red-Green-Blue) color model uses values that represent
-                                        levels of red, levels of green and levels of blue. The more bits represent these
-                                        values the more colors. If only 3 bits are available to represent colors, 1 for
-                                        red, 1 for green and 1 for blue, then 8 colors are
-                                        possible. If 8 bits are available per color, then we can have 2<sup>8</sup> hues
-                                        of red, 2<sup>8</sup> hues of green and 2<sup>8</sup> hues of blue - a total of
-                                        2
+                                    <p>Color images take more bits, but are represented digitally using a color model. There are several color models that are used to represent colors digitally. The RGB (Red-Green-Blue) color model uses values that represent
+                                        levels of red, levels of green and levels of blue. The more bits represent these values the more colors. If only 3 bits are available to represent colors, 1 for red, 1 for green and 1 for blue, then 8 colors are
+                                        possible. If 8 bits are available per color, then we can have 2<sup>8</sup> hues of red, 2<sup>8</sup> hues of green and 2<sup>8</sup> hues of blue - a total of 2
                                         <sup>24</sup> different colors. </p>
                                     <p><img class="imageannotateplus" src="pixelscolour.png"></p>
 
-                                    <p>Things in the real world are not digital, they are not represented as pixels in a
-                                        coordinate grid, like digital images are. Things we see are described as analog.
-                                        However, real life images need to be encoded digitally.
-                                        Sampling is the process of splitting up the real-life image into tiny and tinier
-                                        squares so these squares can be represented as pixels - like imposing a grid
-                                        over a painting and figiring out what colors fit in each
-                                        square. Sampling is doing the ground work with the real image, so that
-                                        digitizing the coordinates values with the most applicable colors looks true to
-                                        life. Decreasing the size of the sampling square(the pixel)
-                                        and increasing the number of samples(the squares) typically leads to a better
-                                        quality image.
+                                    <p>Things in the real world are not digital, they are not represented as pixels in a coordinate grid, like digital images are. Things we see are described as analog. However, real life images need to be encoded digitally.
+                                        Sampling is the process of splitting up the real-life image into tiny and tinier squares so these squares can be represented as pixels - like imposing a grid over a painting and figiring out what colors fit in each
+                                        square. Sampling is doing the ground work with the real image, so that digitizing the coordinate values with the most applicable colors looks true to life. Decreasing the size of the sampling square(the pixel) and
+                                        increasing the number of samples(the squares) typically leads to a better quality image.
                                     </p>
 
                                     <!--  content of popover  -->
@@ -1237,12 +1212,11 @@
 
 
         <!-- Modal 3 DATA COMPRESSION -->
-        <div class="modal fade" id="datacompression" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="datacompression" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="dataLabel">Text & Images, Data Representation</h5>
+                        <h5 class="modal-title" id="dataLabel">Data Compression</h5>
 
 
                     </div>
@@ -1250,23 +1224,34 @@
 
                         <table>
                             <tr>
-                                <td><span class="quote">The goal is to turn data into information and information into
-                                        insight – Carly Fiorina</span><br>
+                                <td><span class="quote">Conceptual art might be, for better or worse, the art most susceptible to lossy compression
+                                     – Brian Christian</span><br>
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i>
+                                    <p>Data is encoded digitally as pulses of electricity, which we represent as binary 1s and 0s. Data can take up a lot of space.
+                                        <button type="button" class="btn btn-info" id="spacebutton" data-toggle="popover" title="Digital units of measurement" data-trigger="hover" html="true">What's space?</button>.</p>
+
+                                    <p>
+                                        Data compression is a general term for technology that encodes data in order to shrink that data. The data is stored in files. Smaller files take up less room, leaving more storage real-estate. Also, smaller files are faster to transfer over a network,
+                                        whether that network is the Internet, an intranet, or a local area network (LAN).
+                                    </p>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
                                     <i class="material-icons custom">stars</i> What is data compression?<br>
                                     <i class="material-icons custom">stars</i> Why is data compression necessary?<br>
-                                    <i class="material-icons custom">stars</i> What file extensions show data
-                                    compression?
+                                    <i class="material-icons custom">stars</i> What file extensions show data compression?
                                     <br>
                                     <i class="material-icons custom">stars</i> Can compressed data be restored?<br>
                                     <i class="material-icons custom">stars</i> What is lossy compression?<br>
 
 
                                 </td>
-                                <td><i class="material-icons custom">question_answer</i>
-                                    <p>Data is encoded digitally as pulses of electricity, which we represent as binary
-                                        1s and 0s. Data can take up a lot of space.</p>
-                                    <p>A 3 minute song takes up about 30 Megabytes of storage, mega is million, so 30
-                                        million bytes, and a byte is 8 bits, so 240 million bits.</p>
+                                <td>
+                                    <p>A 3 minute song takes up about 30 Megabytes of storage, mega is million, so 30 million bytes, and a byte is 8 bits, so 240 million bits.</p>
                                     <p>A 1 hour long high definition video takes around 800 Gigabytes</p>
                                     <table>
                                         <tr>
@@ -1284,20 +1269,11 @@
                                             <td>compressed to about 1 GB</td>
                                         </tr>
                                     </table>
-                                    <p>
-                                        Data compression is a general term for technology that encodes data in order to
-                                        shrink the data. The data is stored in files. Smaller files take up less room,
-                                        leaving more storage real-estate. Also, smaller files are faster to transfer
-                                        over a network,
-                                        whether that network is the Internet, an intranet, or a local area network
-                                        (LAN).
-                                    </p>
+                                    <br>
 
-                                    <p>Sometimes compression is lossy, which means that to save space some information
-                                        is thrown away and the data cannot be restored to it's original form.
+                                    <p>Sometimes compression is lossy, which means that to save space some information is thrown away and the data cannot be restored to it's original form.
                                     </p>
-                                    <p>When data is compressed without losing any details, this is lossless compression.
-                                        The data can be decompressed into the exact original.</p>
+                                    <p>When data is compressed without losing any details, this is lossless compression. The data can be decompressed into the exact original.</p>
                                 </td>
                             </tr>
                         </table>
@@ -1314,8 +1290,7 @@
 
         <!-- Modal 4 COPYRIGHT -->
         <!-- The Modal -->
-        <div class="modal fade" id="copyright" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="copyright" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1329,39 +1304,29 @@
                                 <td><span class="quote">The copyright bargain: a balance between protection for the
                                         artist and rights for the consumer
                                         – Robin Gross</span><br><br>
-                                    <i class="material-icons custom">stars</i> What is a copyright license?<br>
-                                    <i class="material-icons custom">stars</i> Are copyright licenses forever ?<br>
+
                                 </td>
                                 <td><i class="material-icons custom">question_answer</i>
-                                    <p>Copyright refers to the legal right of the owner of intellectual property to
-                                        protect the hard work they put into the creation of that artefact by governing
-                                        who can copy the work. Copyright licenses mean that the original
-                                        creator of a product and anyone the creator gives authorization to, are the only
-                                        ones with the right to reproduce the work.</p>
+                                    <p>Copyright refers to the legal right of the owner of intellectual property to protect the hard work they put into the creation of that artefact by governing who can copy the work. Copyright licenses mean that the original
+                                        creator of a product and anyone the creator gives authorization to, are the only ones with the right to reproduce the work.</p>
                                     <p>Typically, copyright licenses only apply for a limited amount of time.</p>
 
                                 </td>
                             </tr>
                             <tr>
                                 <td>
+                                    <i class="material-icons custom">stars</i> What is a copyright license?<br>
+                                    <i class="material-icons custom">stars</i> Are copyright licenses forever ?<br>
                                     <i class="material-icons custom">stars</i> What is Creative Commons?<br>
                                     <i class="material-icons custom">stars</i> What is a creative commons license?<br>
                                 </td>
                                 <td><i class="material-icons custom">question_answer</i>
                                     <p>
-                                        Creative Commons is an American non-profit organization and international
-                                        network devoted to educational access and expanding the range of creative works
-                                        available for others to build upon legally and to share.</p>
-                                    <p>Creative Commons licenses give everyone from individual creators to large
-                                        institutions a standardized way to grant the public permission to use their
-                                        creative work under copyright law. From the reuser’s perspective,
-                                        the presence of a Creative Commons license on a copyrighted work answers the
-                                        question, “What can I do with this work?” </p>
-                                    <p>There are currently 6 different licenses created under the Creative Common
-                                        license umbrella, giving owners of intellectual property a range of options for
-                                        deciding how the work is used and protected.</p>
-                                    <p>The digitization of information, and the ease of copying and rebranding, pose
-                                        challenges to intellectual property rights.</p>
+                                        Creative Commons is an American non-profit organization and international network devoted to educational access and expanding the range of creative works available for others to build upon legally and to share.</p>
+                                    <p>Creative Commons licenses give everyone from individual creators to large institutions a standardized way to grant the public permission to use their creative work under copyright law. From the reuser’s perspective,
+                                        the presence of a Creative Commons license on a copyrighted work answers the question, “What can I do with this work?” </p>
+                                    <p>There are currently 6 different licenses created under the Creative Common license umbrella, giving owners of intellectual property a range of options for deciding how the work is used and protected.</p>
+                                    <p>The digitization of information, and the ease of copying and rebranding, pose challenges to intellectual property rights.</p>
                                 </td>
                             </tr>
                         </table>
@@ -1384,8 +1349,7 @@
 
 
         <!-- Modal 5 INTERNET -->
-        <div class="modal fade" id="internet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="internet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1399,45 +1363,42 @@
                                 <td><span class="quote">
                                         The internet is becoming the town square for the global
                                         village of tomorrow - Bill Gates</span><br>
-                                    <i class="material-icons custom">stars</i> When did the internet start?
+
+                                </td>
+                                <td>
+                                    <p>The internet is a network of networks, linking billions of devices together!</p>
+                                    <p>
+                                        The internet grew from the work of many scientists across different continents. The US government agency, Advanced Research Projects Agency, ARPA, was formed by the department of defence to bolster and oversee American technology after Russia launched
+                                        a satellite called Sputnik. One of the projects was a set of linked computers, given the name ARPANet. This morphed into the modern internet. In the US, Vint Cerf and Bob Kahn built on the work of French engineer,
+                                        Louis Pouzin, in the creation of an important set of networking agreements called TCP/IP. TCP/IP makes the internet work!
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <i class="material-icons custom">stars</i> When did the internet start?
                                     <br>
                                     <i class="material-icons custom">stars</i> Who created the internet?<br>
                                     <i class="material-icons custom">stars</i> What's a distributed network?
                                     <br>
                                     <i class="material-icons custom">stars</i> What's a centralized network?
-                                    <i class="material-icons custom">stars</i> Who is in charge of the internet?
-                                </td>
+                                    <i class="material-icons custom">stars</i> Who is in charge of the internet?</td>
                                 <td><i class="material-icons custom">question_answer</i>
-                                    <p>The internet is a network of networks, linking billios of devices together!</p>
-                                    <p>
-                                        The internet grew from the work of many scientists across different continents.
-                                        The US government agency, Advanced Research Projects Agency, ARPA, was formed by
-                                        the department of defence to bolster and oversee American technology after
-                                        Russia launched
-                                        a satellite called Sputnik. One of the projects was a set of linked computers,
-                                        given the name ARPANet. This morphed into the modern internet. In the US, Vint
-                                        Cerf and Bob Kahn
-                                    </p>
-                                    <p>Centralized networks are networks that have a center of control. <img
-                                            src="centralizednw.png">. Problem, if the center of control is taken out by
-                                        a missile strike, then the whole network is down. The solution was created
-                                        by Paul Baran, a distributed network, <img src="meshnw.png"> in which computers
-                                        are connected to each other in a mesh network, and there is no central control.
-                                    </p>
-                                    <p>Baran came up with the idea of a network that would send units of information
-                                        called packets, in different ways across the mesh network. As a result, a
-                                        working nationwide packet network was created.</p>
-                                    <p>
-                                        No-one controls the internet and everyone controls the internet! The ICANN, a
-                                        nonprofit organization composed of stakeholders from government organizations,
-                                        members of private companies, and internet users from all over the world, now
-                                        has direct control
-                                        over the Internet Assigned Numbers Authority (IANA), the body that manages the
-                                        web's domain name system (DNS).
-                                    </p>
-                                    <p>The internet is fully distributed, no central control. End to end connectivity is
-                                        the guiding principle, any device can connect to any other device.
-                                    </p>
+
+                                    <p>Centralized networks are networks that have a center of control.
+                                        <img style="display: inline;" src="centralizednw.png">
+                                        <p style="float: right;">Problem, if the center of control is taken out by a missile strike, then the whole network is down.
+                                        </p>
+
+                                        <p style="text-align: left"><img style="float: left; margin: 0px 15px 15px 0px;" src="meshnw.png">The solution was created by Paul Baran, a distributed network, in which computers are connected to each other in a mesh network, and there is
+                                            no central control.
+                                        </p>
+                                        <p>Baran came up with the idea of a network that would send units of information called packets, in different ways across the mesh network. As a result, a working nationwide packet network was created.</p>
+                                        <p>
+                                            No-one controls the internet and everyone controls the internet! The ICANN, a nonprofit organization composed of stakeholders from government organizations, members of private companies, and internet users from all over the world, now has direct control
+                                            over the Internet Assigned Numbers Authority (IANA), the body that manages the web's domain name system (DNS).
+                                        </p>
+                                        <p>The internet is fully distributed, no central control. End to end connectivity is the guiding principle, any device can connect to any other device.
+                                        </p>
                                 </td>
                             </tr>
                             <tr>
@@ -1449,30 +1410,18 @@
                                     <span class="quote">
                                         The internet is a design philosophy and an architecture expressed in a set of
                                         protocols - Vint Cerf</span><br>
-                                    <i class="material-icons custom">stars</i> What does every device attached to the
-                                    internet need?<br>
-                                    <i class="material-icons custom">stars</i> What's a protocol?<br>
+
                                 </td>
                                 <td>
                                     <i class="material-icons custom">question_answer</i>
-                                    <p>Protocol is the term given to a set of guidelines and standards. Protpcols are
-                                        important on the internet because manufactirers of computing devices need to
-                                        agree on communications standards that they all agree to support
-                                        so all the devices can communicate.</p>
-                                    <p> Having protocols means that new technology can be included in the internet
-                                        framework, by knowing what standards to abide by.</p>
-                                    <p>One of the most important protocols on the internet concerns addressing, knowing
-                                        the exact location to route data to. This protocol is called the Internet
-                                        Protocol, IP</p>
-                                    <p>Every device attached to the internet needs a unique address, called an IP
-                                        (Internet Protocol) address.</p>
-                                    <p>In the 1970s Vint Cerf and Bob Kahn invented The Internet Working Protocol, to
-                                        make it possible for devices on the internet to communicate.There are 2
-                                        different types of IP or Internet Protocol addresses,
-                                        <button type="button" class="btn btn-info" id="ipv4button" data-toggle="popover"
-                                            title="IPV4" data-trigger="hover" html="true">IPV4</button> and
-                                        <button type="button" class="btn btn-info" id="ipv6button" data-toggle="popover"
-                                            title="IPV6" data-trigger="hover" html="true">IPV6</button>.
+                                    <p>Protocol is the term given to a set of guidelines and standards. Protocols are important on the internet because manufacturers of computing devices need to agree on communications standards that they all support so
+                                        all the devices can communicate.</p>
+                                    <p> Having protocols means that new technology can be included in the internet framework, by knowing what standards to abide by.</p>
+                                    <p>One of the most important protocols on the internet concerns addressing, knowing the exact location to route data to. This protocol is called the Internet Protocol, IP</p>
+                                    <p>Every device attached to the internet needs a unique address, called an IP (Internet Protocol) address.</p>
+                                    <p>In the 1970s Vint Cerf and Bob Kahn invented The Internet Working Protocol, to make it possible for devices on the internet to communicate.There are 2 different types of IP or Internet Protocol addresses,
+                                        <button type="button" class="btn btn-info" id="ipv4button" data-toggle="popover" title="IPV4" data-trigger="hover" html="true">IPV4</button> and
+                                        <button type="button" class="btn btn-info" id="ipv6button" data-toggle="popover" title="IPV6" data-trigger="hover" html="true">IPV6</button>.
                                     </p>
                                 </td>
 
@@ -1481,25 +1430,21 @@
                                 <td class="infocell" colspan="2">DNS, Domain Name System</td>
                             </tr>
                             <tr>
-                                <td><i class="material-icons custom">stars</i> I never use an IP address to open a web
-                                    site?<br>
+                                <td>
+                                    <i class="material-icons custom">stars</i> What does every device attached to the internet need?<br>
+                                    <i class="material-icons custom">stars</i> What's a protocol?<br>
+                                    <i class="material-icons custom">stars</i> I never use an IP address to open a web site?
+                                    <br>
                                     <i class="material-icons custom">stars</i> What is DNS?<br>
                                 </td>
                                 <td> <i class="material-icons custom">question_answer</i>
-                                    <p>DNS, Domain Name System, associates a domain name, like www.code.org, with an ip
-                                        address.</p>
-                                    <p>DNS servers work together to retrive IP addresses based on domain names, as a
-                                        single DNS server could not store a directory of all existing domain names and
-                                        their IP address. DNS servers are connected into a distributed
-                                        hierarchy. Dividing the DNS servers into zones makes it easier to access the
-                                        correct DNS server. These zones are established for all the .orgs, all the
-                                        .coms, all the .edus and other domain extensions. (BTW, the
-                                        domain name is CODE, the domain extension is .org, and the .org part identifies
-                                        the zone) </p>
-                                    <p>DNS is susceptible to cyberattacks, if the mapping between a domain name and it's
-                                        IP address is changed, the user will be redirected to a different site.This is
-                                        termed DNS spoofing.</p>
-                                    <p>Ip and DNS are designed to scale, no matter how much the internet grows.</p>
+                                    <p>DNS, Domain Name System, associates a domain name, like www.code.org, with an IP address.
+                                    </p>
+                                    <p>DNS servers work together to retrieve IP addresses based on domain names, as a single DNS server could not store a directory of all existing domain names and their IP address. DNS servers are connected into a distributed
+                                        hierarchy. Dividing the DNS servers into zones makes it easier to access the correct DNS server. These zones are established for all the .orgs, all the .coms, all the .edus and other domain extensions. (BTW, in
+                                        www.code.org, the domain name is CODE, the domain extension is .org, and the .org part identifies the zone) </p>
+                                    <p>DNS is susceptible to cyberattacks, if the mapping between a domain name and it's IP address is changed, the user will be redirected to a different site.This is termed DNS spoofing.</p>
+                                    <p>IP and DNS are designed to scale, no matter how much the internet grows.</p>
                                 </td>
                             </tr>
                             <tr>
@@ -1507,35 +1452,23 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <i class="material-icons custom">stars</i>How is information sent on the
-                                    internet?<br>
-                                    <i class="material-icons custom">stars</i>How is information sent on the
-                                    internet?<br>
+                                    <i class="material-icons custom">stars</i>How is information sent on the internet?
+                                    <br>
+                                    <i class="material-icons custom">stars</i>How is information sent on the internet?
+                                    <br>
                                     <i class="material-icons custom">stars</i>How is the internet fault tolerant?<br>
                                 </td>
                                 <td><i class="material-icons custom">question_answer</i><br>
-                                    <p>Information is broken up and sent out on the internet in units of information
-                                        called packets.</p>
-                                    <p>These packets are not sent on the same pathway. Instead, the packets are numbered
-                                        and sent out on different routes - to be reassembled at the destination.</p>
-                                    <p>The availability of different routes may seem inefficient but it is not! The more
-                                        redundant routes there are, the morecertain it is that all packets will get to
-                                        the destination. If one route fails, another is available.</p>
-                                    <p>Special computers called routers act like traffic cops and keep the packets
-                                        moving along the correct route to the destination. These routers follow the
-                                        internet protocol and keep track of routes for sending packets.
-                                        The big idea is to choose the most efficient route to the destination. The
-                                        packets may all be sent out on different routes and are reassembled at the
-                                        destination.
+                                    <p>Information is broken up and sent out on the internet in units of information called packets.</p>
+                                    <p>These packets are not sent on the same pathway. Instead, the packets are numbered and sent out on different routes - to be reassembled at the destination.</p>
+                                    <p>The availability of different routes may seem inefficient but it is not! The more redundant routes there are, the more certain it is that all packets will get to the destination. If one route fails, another is available.</p>
+                                    <p>Special computers called routers act like traffic cops and keep the packets moving along the correct route to the destination. These routers follow the internet protocol and keep track of routes for sending packets.
+                                        The big idea is to choose the most efficient route to the destination. The packets may all be sent out on different routes and are reassembled at the destination.
 
                                     </p>
-                                    <p>If a particular route has a problem, or is down, or backed up, a packet can be
-                                        sent on a different route. This feature makes the internet fault-tolerant, and
-                                        therefore more reliable.
+                                    <p>If a particular route has a problem, or is down, or backed up, a packet can be sent on a different route. This feature makes the internet fault-tolerant, and therefore more reliable.
                                     </p>
-                                    <p>Do we know if all the packets are delivered? Yes we do, courtesy of Transport
-                                        Control Protocol, or TCP/IP. When packets arrive at the destination TCP
-                                        evaluates the transmission, and sends a message to the sender to
+                                    <p>Do we know if all the packets are delivered? Yes we do, courtesy of Transport Control Protocol, or TCP/IP. When packets arrive at the destination TCP evaluates the transmission, and sends a message to the sender to
                                         resend any missing or damaged packets.
                                     </p>
                                     <P>TCP/IP and router systems are scaleable, they can work with few devices or many!
@@ -1549,37 +1482,27 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <i class="material-icons custom">stars</i>How is a message sent over the
-                                    internet?<br>
+                                    <i class="material-icons custom">stars</i>How is a message sent over the internet?
+                                    <br>
                                     <i class="material-icons custom">stars</i>What is bandwidth?<br>
                                     <i class="material-icons custom">stars</i>What is bit rate?<br>
                                     <i class="material-icons custom">stars</i>What is latency?<br>
-                                    <i class="material-icons custom">question_answer</i>How long does it take to
-                                    download, say 5 MB?<br>
+                                    <i class="material-icons custom">question_answer</i>How long does it take to download, say 5 MB?<br>
                                 </td>
                                 <td>
                                     <i class="material-icons custom">question_answer</i><br>
-                                    <p>Information is sent on the internet as pulses as electricity, light or radio
-                                        waves, on the lines of the internet. The smallest unit of information is a bit,
-                                        a pulse or lack of, and to us this can be represented as a
+                                    <p>Information is sent on the internet as pulses as electricity, light or radio waves, on the lines of the internet. The smallest unit of information is a bit, a pulse or lack of, and to us this can be represented as a
                                         1 or a 0.
                                     </p>
-                                    <p>Bandwidth measures how many bits are sent, bandwidth is the maximum transmission
-                                        capacity of a device. Bandwidth is measured by bit rate, which is the maximum
-                                        number of bits that can be sent per unit of time (usually
+                                    <p>Bandwidth measures how many bits are sent, bandwidth is the maximum transmission capacity of a device. Bandwidth is measured by bit rate, which is the maximum number of bits that can be sent per unit of time (usually
                                         seconds).
 
                                     </p>
-                                    <p>Latency is another measure of performance. Latency is the time it takes for a bit
-                                        to get from source to destination.</p>
+                                    <p>Latency is another measure of performance. Latency is the time it takes for a bit to get from source to destination.</p>
                                     <p>Ideally, you want low latency and high bandwidth!</p>
-                                    <p>Can you figre out how long it takes to download a 4 MB song, at a bitrate of 1 MB
-                                        per second?</p>
-                                    <p>Different substrates are used to transfer bits of information over the internet.
-                                        These substrates have <button type="button" class="btn btn-info"
-                                            id="substratesbutton" data-toggle="popover" title="Substrates"
-                                            data-trigger="hover" html="true">pros and cons</button>. In practice,
-                                        several substrates get the bits to their destination.</p>
+                                    <p>Can you figre out how long it takes to download a 4 MB song, at a bitrate of 1 MB per second?</p>
+                                    <p>Different substrates are used to transfer bits of information over the internet. These substrates have <button type="button" class="btn btn-info" id="substratesbutton" data-toggle="popover" title="Substrates" data-trigger="hover"
+                                            html="true">pros and cons</button>. In practice, several substrates get the bits to their destination.</p>
                                 </td>
 
                             </tr>
@@ -1600,30 +1523,70 @@
                                     <P>
                                         http://computers.org
                                     </P>
-                                    <p>When you type this in, your computers contacts a server, and uses a language
-                                        called <button type="button" class="btn btn-info" id="httpbutton"
-                                            data-toggle="popover" title="HTTP" data-trigger="hover"
-                                            html="true">HTTP</button>HTTP
-                                        to ask that server for the files that are associated with a web site. Each file
-                                        that makes up a web site, pictures images and special other files are requested
-                                        and sent to your computer so the web pages can be rendered
+                                    <p>When you type this in, your computers contacts a server, and uses a language called <button type="button" class="btn btn-info" id="httpbutton" data-toggle="popover" title="HTTP" data-trigger="hover" html="true">HTTP</button>HTTP
+                                        to ask that server for the files that are associated with a web site. Each file that makes up a web site, pictures images and special other files are requested and sent to your computer so the web pages can be rendered
                                         by your browser.</p>
-                                    <p>These pages that are behind the web site are created in a markup or formatting
-                                        language called <button type="button" class="btn btn-info" id="htmlbutton"
-                                            data-toggle="popover" title="HTML" data-trigger="hover"
-                                            html="true">HTML</button>.</p>
+                                    <p>These pages that are behind the web site are created in a markup or formatting language called <button type="button" class="btn btn-info" id="htmlbutton" data-toggle="popover" title="HTML" data-trigger="hover" html="true">HTML</button>.</p>
                                 </td>
                             </tr>
 
                         </table>
                         <!--  content of popovers  -->
 
+                        <div id="spaceinfo" style="display: none">
+                            <div>
+
+                                <table>
+                                    <tr>
+                                        <th>Measure</th>
+                                        <th>Space</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            bit
+                                        </td>
+                                        <td>Smallest unit of information</td>
+                                    </tr>
+                                    <tr>
+                                        <td>byte</td>
+                                        <td>8 bits</td>
+                                    </tr>
+                                    <tr>
+                                        <td>nybble</td>
+                                        <td>4 bits</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kilobit, Kb</td>
+                                        <td>1024 bits (approx 1000), 2<sup>10</sup> bits</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kilobyte, KB</td>
+                                        <td>1024 bytes (approx 1000), 2<sup>10</sup> bytes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Megabyte, MB</td>
+                                        <td>1,048,576 bytes (approx 1,000,000), 2<sup>20</sup></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gigabyte, GB</td>
+                                        <td>1,048,576 bytes (approx 1,000,000,000), 2<sup>30</sup></td>
+                                    </tr>
+                                </table>
+                                <hr>
+
+                                <p>You can convert bits to bytes by dividing by 8.</p>
+                                <p>You can convert bytes to bits by multiplying by 8.</p>
+                                <p>You can convert MB to GB by dividing by 2<sup>10</sup>. Can you figure out how to do more conversions? You may need to divide or multiply by powers of 2, or you can use the closest approximation, like 2<sup>10</sup> is
+                                    approx 1,000.</p>
+                            </div>
+                        </div>
+
+
+
                         <div id="httpinfo" style="display: none">
                             <div>
                                 <p>HTTP, HyperText Transfer Protocol.</p>
-                                <p>HTTP is a language that is used to GET web documents from sites so that the web page
-                                    can be rendered by your browser. Information may be sent back to the remote site
-                                    with a HTTP POST request. GET and POST are 2 common HTTP
+                                <p>HTTP is a language that is used to GET web documents from sites so that the web page can be rendered by your browser. Information may be sent back to the remote site with a HTTP POST request. GET and POST are 2 common HTTP
                                     requests.
                                 </p>
                             </div>
@@ -1672,27 +1635,21 @@
 
                         <div id="ipv4info" style="display: none">
                             <div>
-                                <p>IPV4 </p>
-                                <p>IPV4 was designed in 1973 and adopted in the 1980s. IPV4 addressing supports 32 bits,
-                                    4 octets, separated by a dot - referred to as dotted decimal notation.</p>
+                                <p>IPV4 was designed in 1973 and adopted in the 1980s. IPV4 addressing supports 32 bits, 4 octets, separated by a dot - referred to as dotted decimal notation.</p>
                                 <p>10101010.11110000.0001000.11001100</p>
                                 <p>170.240.8.204</p>
                                 <p>Each octet can represent 0 through 255, so there are 255
                                     <sup>4</sup> possible addresses, about 4 billion.
                                 </p>
-                                <p>The IP address represents the country, then the region, the subnetwork and finally
-                                    the device. </p>
-                                <p>We ran out of IPV4 addresses many years ago and started a lengthy process of
-                                    switching over to a newer format, IPV6.</p>
+                                <p>The IP address represents the country, then the region, the subnetwork and finally the device. </p>
+                                <p>We ran out of IPV4 addresses many years ago and started a lengthy process of switching over to a newer format, IPV6.</p>
                             </div>
                         </div>
                         <div id="ipv6info" style="display: none">
                             <div>
-                                <p>IPV6</p>
-                                <p>We are in the middle of a multi-year transition to IPV6, also referrred to as IPng -
-                                    Internet Protocol Next Generation.</p>
+                                <p>We are in the middle of a multi-year transition to IPV6, also referrred to as IPng - Internet Protocol Next Generation.</p>
                                 <p>IPV6 supports 128 bits, each group of 16 bits separated by a colon, :</p>
-                                <p>A12B:</p>
+                                <p>A12B:12B4:C102B:ABCD:A123:CDA1:FF1D:AB11</p>
                             </div>
                         </div>
                         <!-- end content of popover -->
@@ -1712,8 +1669,7 @@
 
 
         <!-- Modal 6 PROGRAMMING -->
-        <div class="modal fade" id="programming" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="programming" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1726,72 +1682,78 @@
                             <tr>
                                 <td><span class="quote">Talk is cheap, show me the code
                                         – Linus Torvalds</span><br><br>
-                                    <i class="material-icons custom">stars</i> What's (an) app'?<br>
-                                    <i class="material-icons custom">stars</i> What types of app are there?<br>
-                                </td>
-                                <td><i class="material-icons custom">question_answer</i><br>
-                                    <p>Program code, programs, apps or applications are sequences of instructions,
-                                        written in a programming language, and translated by another piece of software 
-                                        called a compiler or interpreter, into code the computer can understand.
-                                
-                                    </p>
-                                    <p>apps are categegorized as native, hybrid, web and progressive.</p>
 
                                 </td>
+                                <td><i class="material-icons custom">question_answer</i><br>
+                                    <p>Software is another term given to the code that powers business and entertains with games and media.</p>
+                                </td>
                             </tr>
+
                             <tr>
                                 <td class="infocell" colspan="2">Programming, purpose</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td> <i class="material-icons custom">stars</i> What's (an) app'?<br>
+                                    <i class="material-icons custom">stars</i> What types of app are there?<br>
                                     <i class="material-icons custom">stars</i> What's the purpose of software?<br>
-                                
+
                                 </td>
                                 <td><i class="material-icons custom">question_answer</i>
+                                    <p>Program code, programs, apps or applications are sequences of instructions, written in a programming language, and translated by another piece of software called a compiler or interpreter, into code the computer can
+                                        understand.
+
+                                    </p>
+                                    <p>apps are categegorized as native, hybrid, web and progressive.</p>
                                     <p>
-                                        Computer programming is the math of the 21st century. 
-                                        It is used to solve modern problems, and provide entertainment. </p>
-                                   
+                                        Computer programming is the math of the 21st century. It is used to solve modern problems, and provide entertainment. </p>
+
                                 </td>
                             </tr>
-                                <tr>
-                                    <td class="infocell" colspan="2">Problems in programming</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="material-icons custom">stars</i> What's a syntax error?<br>
-                                        <i class="material-icons custom">stars</i> What's a semantic error?<br>
-                                    </td>
-                                    <td>
-                                        <i class="material-icons custom">question_answer</i> <br>
-                                        <p>A syntax error is an error in the computer programming language, 
-                                            like misspellind if as <i>iif</i>!</p>
-                                            <p>A semantic error is an error in the logic of the program code, 
-                                                like inadvertently creating a loop that never exits or checking the wrong variable</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="infocell" colspan="2">Programming constructs</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="material-icons custom">stars</i> How does important information get stored?<br>
-                                        <i class="material-icons custom">stars</i> How are decision made?<br>
-                                        <i class="material-icons custom">stars</i> How can I make code more efficient and write less?<br>
-                                    </td>
-                                    <td>
-                                        <i class="material-icons custom">question_answer</i> <br>
-                                       <p>variables store information temporarily in programs.</p>
-                                       <p>Conditionals or if statements help to take a specific action based 
-                                           checking a condition in the code.</p>
-    <p>A function is a block of code, given a name and invoked by that name. 
-    Functions are useful when lines of code are repeated throughout a program.
+                            <tr>
+                                <td class="infocell" colspan="2">Problems in programming</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">stars</i> What's a syntax error?<br>
+                                    <i class="material-icons custom">stars</i> What's a semantic error?<br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i> <br>
+                                    <p>A syntax error is an error in the computer programming language, like misspellind if as <i>iif</i>!</p>
+                                    <p>A semantic error is an error in the logic of the program code, like inadvertently creating a loop that never exits or checking the wrong variable</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Programming constructs</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">stars</i> How does important information get stored?<br>
+                                    <i class="material-icons custom">stars</i> How are decisions made?<br>
+                                    <i class="material-icons custom">stars</i> How can I make code more efficient and write less?<br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i> <br>
+                                    <p>variables store information temporarily in programs.</p>
+                                    <p>Conditionals or if statements help to take a specific action based on checking a condition in the code.</p>
+                                    <p>A function is a block of code, given a name and invoked by that name. Functions are useful when lines of code are repeated throughout a program. You can save lines of code by creating a function and calling it when
+                                        needed. Functions make code more maintainable and easier to change, because a change only has to be made locally, inside the function.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Events Driven Programming</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">stars</i> What events are in programming?<br>
+                                    <i class="material-icons custom">stars</i> How do events get things done?<br>
 
-    You can save lines of code by creating a function and calling it when needed. 
-    Functions make code more maintainable and easier to change, because a 
-    change only has to be made locally, inside the function.</p>
-                                    </td>
-                                </tr>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i> <br>
+                                    <p>An event is a stimulus, like clicking a button or moving the mouse over the screen.</p>
+                                    <p>The program code can trap an event and decide to do something - like adding to a count of clicks.</p>
+                                    <p>Events don't do anything if they are not handled by the code. </p>
+                                </td>
+                            </tr>
 
-                            
                         </table>
 
 
@@ -1811,75 +1773,79 @@
 
 
         <!-- Scripts -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js "
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
-            crossorigin="anonymous "></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
-            crossorigin="anonymous "></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
-            crossorigin="anonymous "></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
         <script>
             //    $(function() {
             //        $('[data-toggle="popover "]').popover();
             //    })
         </script>
         <script>
-            $(document).ready(function () {
+            $(document).ready(function() {
+                $('#spacebutton').popover({
+                    html: true,
+                    content: function() {
+                        return $('#spaceinfo').html();
+                    }
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
                 $('#binnumbutton').popover({
                     html: true,
-                    content: function () {
+                    content: function() {
                         return $('#binnum').html();
                     }
                 });
             });
         </script>
         <script>
-            $(document).ready(function () {
+            $(document).ready(function() {
                 $('#hexchartbutton').popover({
                     html: true,
-                    content: function () {
+                    content: function() {
                         return $('#hexchart').html();
                     }
                 });
             });
         </script>
         <script>
-            $(document).ready(function () {
+            $(document).ready(function() {
                 $('#asciichartbutton').popover({
                     html: true,
-                    content: function () {
+                    content: function() {
                         return $('#asciichart').html();
                     }
                 });
             });
         </script>
         <script>
-            $(document).ready(function () {
+            $(document).ready(function() {
                 $('#ipv4button').popover({
                     html: true,
-                    content: function () {
+                    content: function() {
                         return $('#ipv4info').html();
                     }
                 });
             });
         </script>
         <script>
-            $(document).ready(function () {
+            $(document).ready(function() {
                 $('#ipv6button').popover({
                     html: true,
-                    content: function () {
+                    content: function() {
                         return $('#ipv6info').html();
                     }
                 });
             });
         </script>
         <script>
-            $(document).ready(function () {
+            $(document).ready(function() {
                 $('#substratesbutton').popover({
                     html: true,
-                    content: function () {
+                    content: function() {
                         return $('#substratesinfo').html();
                     }
                 });
@@ -1887,10 +1853,10 @@
         </script>
 
         <script>
-            $(document).ready(function () {
+            $(document).ready(function() {
                 $('#httpbutton').popover({
                     html: true,
-                    content: function () {
+                    content: function() {
                         return $('#httpinfo').html();
                     }
                 });
@@ -1899,10 +1865,10 @@
 
 
         <script>
-            $(document).ready(function () {
+            $(document).ready(function() {
                 $('#htmlbutton').popover({
                     html: true,
-                    content: function () {
+                    content: function() {
                         return $('#htmlinfo').html();
                     }
                 });
